@@ -4,14 +4,16 @@
     <PreferenceCategory
         app:allowDividerAbove="false"
         app:allowDividerBelow="true"
-        app:title="@string/updates_screen_title">
+        app:title="@string/updates_screen_title"
+        app:iconSpaceReserved="false">
 
         <SwitchPreferenceCompat
             app:title="@string/pref_background_update_check"
             app:summaryOn="@string/pref_background_update_check_summary_on"
             app:summaryOff="@string/pref_background_update_check_summary_off"
             app:key="@string/pref_key_background_update_check"
-            app:defaultValue="@bool/pref_def_background_update_check" />
+            app:defaultValue="@bool/pref_def_background_update_check"
+            app:iconSpaceReserved="false" />
 
         <ListPreference
             app:title="@string/pref_background_update_check_interval"
@@ -20,13 +22,15 @@
             app:entries="@array/pref_labels_entries_background_update_check_interval"
             app:entryValues="@array/pref_values_background_update_check_interval"
             app:key="@string/pref_key_background_update_check_interval"
-            app:defaultValue="@string/pref_def_background_update_check_interval" />
+            app:defaultValue="@string/pref_def_background_update_check_interval"
+            app:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
             app:title="@string/pref_auto_update_packages"
             app:dependency="@string/pref_key_background_update_check"
             app:key="@string/pref_key_auto_update_packages"
-            app:defaultValue="@bool/pref_def_auto_update_packages" />
+            app:defaultValue="@bool/pref_def_auto_update_packages"
+            app:iconSpaceReserved="false" />
 
         <ListPreference
             app:title="@string/pref_network_type_for_auto_updates"
@@ -36,7 +40,8 @@
             app:entries="@array/pref_labels_network_type_for_auto_updates"
             app:entryValues="@array/pref_values_network_type_for_auto_update_job"
             app:key="@string/pref_key_network_type_for_auto_update_job"
-            app:defaultValue="@string/pref_def_network_type_for_bg_update_job" />
+            app:defaultValue="@string/pref_def_network_type_for_bg_update_job"
+            app:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
             app:title="@string/pref_always_allow_noCode_updates"
@@ -44,7 +49,8 @@
             app:summaryOff="@string/pref_always_allow_noCode_updates_summary_off"
             app:key="@string/pref_key_always_allow_nocode_updates"
             app:defaultValue="@bool/pref_def_always_allow_noCode_updates"
-            app:singleLineTitle="false" />
+            app:singleLineTitle="false"
+            app:iconSpaceReserved="false" />
 
     </PreferenceCategory>
 
